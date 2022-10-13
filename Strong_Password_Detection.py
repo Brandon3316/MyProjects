@@ -1,5 +1,5 @@
 #This will validate to see if the passwords are strong or weak (True or false respectively).
-#This project is in progress and will be modified to properly detect the strong password instead of outputting fasle all the time
+#This project is in progress and will be modified to properly detect the strong password instead of outputting false all the time to resolve the issue
 import re
 
 def isStrongPassword(password):
