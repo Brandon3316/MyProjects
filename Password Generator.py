@@ -10,7 +10,8 @@ def shuffle(string):
   random.shuffle(tempList)
   return ''.join(tempList)
 
-#Each of the letters, numbers, and symbols are generated according to the ASCII chart and each of the characters are randomly picked by the decimal ID.
+#Each of the letters, numbers, and symbols are generated according to the ASCII chart. 
+#Each of the characters are randomly picked by the decimal ID.
 uppercaseLetter1=chr(random.randint(65, 90))
 uppercaseLetter2=chr(random.randint(65, 90))
 lowercaseLetter1=chr(random.randint(97, 122))
@@ -22,7 +23,8 @@ punctuationSign2=chr(random.randint(32, 96))
 punctuationSign3=chr(random.randint(32, 96))
 punctuationSign4=chr(random.randint(32, 96))
 
-#The password is added up by uppercase letters, lowercase letters, numbers, and symbols and they are in random order and not in a set for the password to be more secure.
+#The password is added up by uppercase letters, lowercase letters, numbers, and symbols.
+#They are in random order and not in a set for the password to be more secure.
 password = uppercaseLetter1 + uppercaseLetter2 + lowercaseLetter1 + lowercaseLetter2 + digit1 + digit2 + punctuationSign1 + punctuationSign2 + punctuationSign3 + punctuationSign4
 password = shuffle(password)
 
